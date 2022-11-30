@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="main">
+        <h2 id="contactPageInfo">Контакти</h2>
+        <div class="contacts">
+            <div>
+                <a target="_blank" href="https://www.uz.gov.ua/">
+                    <img alt="WWW" 
+                    src="../images/www.png" 
+                    title="WWW"
+                    >
+                    <b> Наш реальний сайт</b>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:uz_gov@bumba.org" target="_blank">
+                    <img alt="MAIL" 
+                    src="../images/mail.jpg" 
+                    title="MAIL"
+                    >
+                    <b> Напишіть нам</b>
+                </a>
+            </div>
+            <div>
+                <a href="tel:+380981234567">
+                    <img alt="phone"
+                    src="../images/tel.png"
+                    title="Phone"
+                    > 
+                    <b>Зателефонуйте нам</b>
+                </a>
+            </div>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Введіть ім'я" required>
+            <input type="text" placeholder="Введіть прізвище" required>
+            <input type="email" placeholder="Введіть Вашу пошту" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input type="tel" placeholder="Введіть Ваш телефон" pattern="^[0-9]*$" required>
+            <div>
+                <button type="submit">Відправити</button>
+            </div>
+        </form>
+        <div class="links">
+            <a href="../index.html">
+                <b>На головну</b>
+            </a>
+            <a href="about.html">
+                <b>Про компанію</b>
+            </a>
+            <a href="gallery.html">
+                <b>Наші фотки</b>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

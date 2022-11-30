@@ -1,0 +1,357 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,
+strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,
+legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* =====================================
+   ======== MY CODE STARTS HERE ========
+   =====================================
+*/
+
+.clearfix:after{
+    content: "";
+    clear: left;
+    display: block;
+}
+
+h1, h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 7px 0;
+}
+
+h1+p {
+    margin: 0 0 9px;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 800;
+    margin: 6px 0;
+}
+
+h3+p, p+p {
+    text-align: justify;
+    margin: 0 0 9px;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid rgba(27, 4, 65, 0.815);
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+}
+
+#introInfo{
+    width: 1190px;
+    margin: 0 -20px;
+    border-top: 5px solid rgba(27, 4, 65, 0.815);
+}
+
+#mechNews div, #railNews div, #trainNews div {
+    padding: 10px;
+    border-bottom: 5px solid rgb(39, 39, 39);
+    margin: 0 auto 10px;
+    width: 1100px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.links, #contactPageInfo, #aboutPageInfo {
+    text-align: center
+}
+
+form, form>div {
+    padding: 5px 0;
+}
+
+#aboutPageInfo+p+p{
+    font-weight: 900;
+    margin-top: 9px;
+}
+
+#aboutPageInfo+p, #aboutPageInfo+p+p+ul{
+    text-align: justify;
+}
+
+ul {
+    list-style: circle;
+    margin: 0 16px;
+}
+
+.main_tc_ib_f {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid rgba(27, 4, 65, 0.815);
+    font-size: 0;
+    background-color: azure;
+}
+
+p+p{
+    margin: 0;
+}
+.tc8 {
+    width: 800px;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.tc6 {
+    width: 600px;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.tc4 {
+    width: 400px;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.tc3 {
+    width: 300px;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.main_tc_ib_f p {
+    font-size: 16px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.part2, .part3, .part4, .hw_a, .B, .C, .D, .E, .F, .E, .G {
+    border-top: 3px solid rgba(27, 4, 65, 0.815);
+}
+
+.tc4+.tc4, .part1 .ib4+.ib4, .f4+.f4, .fl4+.fl4, .gc4+.gc4,
+.part2>.tc4, .part2>.ib4, .part2>.f4, .part2>.fl4, .part2>.gc4,
+.tc6+.tc6, .fl6+.fl6, .gc6+.gc6,
+.tc3+.tc3, .ib3+.ib3, .f3+.f3, .fl3+.fl3, .gc3+.gc3,
+.part4>.tc4, .part4>.fl4, .part4>.gc4,
+.A2, .A3, .C, .D3 {
+    border-left: 1px solid rgba(27, 4, 65, 0.815);
+}
+
+
+.part4 .f4+.f4 {
+    border-left: 0;
+}
+
+.ib6:first-child, .f6:first-child, .part4>.ib8, .part4 .f8, .ib8 .ib4 p, .f8 .f4 p, .D, .D3, .F, .F1, .F2, .F3 {
+    border-right: 1px solid rgba(27, 4, 65, 0.815);
+}
+
+.part2 p+p, .tc3, .ib3, .f3, .fl3, .gc3, .part4>.tc8>div p, .part4>.ib8>div p, .part4>.f8>div p, .part4>.fl8>div p, .part4>.gc8>div p,
+.B p+p, .C p+p, .D2, .D3, .F1, .F2, .F3 {
+    border-top: 1px solid rgba(27, 4, 65, 0.815);
+}
+
+.ib8 {
+    width: 800px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.ib6 {
+    width: 600px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.ib4 {
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.ib3 {
+    width: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.ib3:first-child {
+    width: 299px;
+}
+
+.ib8 .ib4+.ib4 {
+    width: 399px;
+}
+
+.hw_a, .hw_a_main {
+    padding: 0 20px;
+}
+
+.hw_a a, .hw_a_main a {
+    font-size: 30px;
+    color: red;
+    font-weight: 900;
+    float: left;
+}
+
+.f8 {
+    width: 800px;
+    float: left;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.part4 .f8 {
+    width: 801px;
+}
+
+.f6 {
+    width: 601px;
+    float: left;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.f6+.f6 {
+    width: 599px;
+}
+
+.f4 {
+    width: 400px;
+    float: left;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.part4>.f4, .part4>div>div>div {
+    width: 399px;
+}
+
+.f3 {
+    width: 300px;
+    float: left;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.flex {
+    display: flex;
+}
+
+.fl8 {
+    width: 800px;
+    box-sizing: border-box;
+}
+
+.fl6 {
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.fl4 {
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.fl3 {
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid.part1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid.part2 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid.part4 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.areas {
+    display: grid;
+    grid-template-areas:
+    "A1 A1 A1 A1 A2 A2 A2 A2 A3 A3 A3 A3"
+
+    "B B B B B B B B C C C C"
+
+    "D D D D D D E E E E E E"
+    "D2 D2 D2 D3 D3 D3 E E E E E E"
+    
+    "F F F F F F F F G G G G"
+    "F1 F1 F1 F1 F3 F3 F3 F3 G G G G"
+    "F2 F2 F2 F2 F3 F3 F3 F3 G G G G"
+;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+.A1, .A2, .A3, .C, .G, .F1, .F2, .F3 {
+    grid-column: span 4;
+}
+.B, .F {
+    grid-column: span 8;
+}
+
+.D, .E {
+    grid-column: span 6;
+}
+
+.D2, .D3 {
+    grid-column: span 3;
+    grid-row-start: 4;
+}
+
+.F1, .F3 {
+    grid-row-start: 6;
+}
+
+
+.F2 {
+    grid-row-start: 7;
+}
