@@ -86,13 +86,19 @@ h3+p, p+p {
     border-top: 5px solid rgba(27, 4, 65, 0.815);
 }
 
-#mechNews div, #railNews div, #trainNews div {
-    padding: 10px;
+#mechNews, #railNews, #trainNews {
     border-bottom: 5px solid rgb(39, 39, 39);
     margin: 0 auto 10px;
-    width: 1100px;
+    width: 1140px;
     font-size: 20px;
     font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#mechNews a, #railNews a, #trainNews a {
+    margin: 10px auto;
 }
 
 .links, #contactPageInfo, #aboutPageInfo {
@@ -181,7 +187,8 @@ p+p{
     border-right: 1px solid rgba(27, 4, 65, 0.815);
 }
 
-.part2 p+p, .tc3, .ib3, .f3, .fl3, .gc3, .part4>.tc8>div p, .part4>.ib8>div p, .part4>.f8>div p, .part4>.fl8>div p, .part4>.gc8>div p,
+.part2 p+p, .tc3, .ib3, .f3, .fl3, .gc3, 
+.part4>.tc8>div p, .part4>.ib8>div p, .part4>.f8>div p, .part4>.fl8>div p, .part4>.gc8>div p,
 .B p+p, .C p+p, .D2, .D3, .F1, .F2, .F3 {
     border-top: 1px solid rgba(27, 4, 65, 0.815);
 }
@@ -354,4 +361,34 @@ p+p{
 
 .F2 {
     grid-row-start: 7;
+}
+
+.pos_rel {
+    position: relative;
+
+}
+.on_pic{
+    position: absolute;
+    border: 2px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 235, 205, 0.397);
+    visibility: hidden;
+    top: 138px;
+}
+.pos_rel:hover>.on_pic {
+    visibility: visible;
+}
+
+.nav_bar {
+    position: fixed;
+    top: calc(50% - 46px);
+    border: 2px solid black;
+    padding: 0 5px 10px;
+    font-weight: 900;
+    background-color: aquamarine;
+}
+
+.nav_bar div {
+    padding-top: 10px;
 }
