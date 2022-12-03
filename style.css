@@ -374,7 +374,7 @@ p+p{
     box-sizing: border-box;
     background-color: rgba(255, 235, 205, 0.397);
     visibility: hidden;
-    top: 138px;
+    top: calc(50% - 12px);
 }
 .pos_rel:hover>.on_pic {
     visibility: visible;
