@@ -76,13 +76,15 @@ h3+p, p+p {
     margin: 0 auto;
     text-align: center;
     border: 5px solid rgba(27, 4, 65, 0.815);
-    padding: 0 20px 20px;
     box-sizing: border-box;
+}
+
+.main {
+    border-top: 0;
 }
 
 #introInfo{
     width: 1190px;
-    margin: 0 -20px;
     border-top: 5px solid rgba(27, 4, 65, 0.815);
 }
 
@@ -127,6 +129,10 @@ form, form>div {
     font-size: 0;
     background-color: azure;    
     
+}
+
+.main_tc_ib_f {
+    border-top: 0;
 }
 
 p+p{
@@ -436,12 +442,13 @@ p+p{
 
 .nav {
     width: 1190px;
-    position: relative;
+    position: sticky;
     box-sizing: border-box;
-    right: 20px;
+    top: 0;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(103, 215, 235);
+    border-top: 5px solid rgba(27, 4, 65, 0.815);
     border-bottom: 5px solid rgba(27, 4, 65, 0.815);
 }
 
