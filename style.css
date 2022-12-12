@@ -404,18 +404,41 @@ p+p{
 .nav_lvl1, .nav_lvl2, .nav_lvl3 {
     list-style: none;
 }
-
-.nav_lvl1 a, .nav_lvl2 a, .nav_lvl3 a {
+.nav a {
+    position: relative;
+    padding: 20px;
     text-decoration: unset;
     font-weight: 900;
-    padding: 20px;
     background-color: rgb(19, 67, 172);
     color: aliceblue;
     display: block;
     border: 2px solid rgba(27, 4, 65, 0.815);
 }
 
-.nav_lvl1 a:hover, .nav_lvl2 a:hover, .nav_lvl3 a:hover {
+.nav_lvl1>a, .nav_lvl2_float>a, .nav_lvl2_grid>a {
+    padding: 22px 5px 22px 60px;
+}
+
+.blocks_logo>a, .nav_lvl2_float>a {
+    padding: 22px 60px 22px 5px;
+}
+
+.nav_lvl1>a:before, .nav_lvl2_float>a:before,
+.nav_lvl2_grid>a:before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: url('../images/css_sprites.png');
+}
+
+.blocks_logo>a:before, .nav_lvl2_float>a:before {
+    left: calc(100% - 55px); 
+}
+
+.nav a:hover {
     background-color: rgb(9, 33, 85);
 }
 
@@ -473,6 +496,75 @@ p+p{
     z-index: 10;
 }
 
+.main_logo a:before {
+    background-position: -10px -10px;    
+}
+
+.about_logo a:before {
+    background-position: -80px -10px;
+}
+
+.contact_logo a:before {
+    background-position: -10px -80px;
+}
+
+.gal_logo a:before {
+    background-position: -80px -80px;
+}
+
+.blocks_logo>a:before {
+    background-position: -220px -10px;
+}
+
+.nav_lvl2_float>a:before {
+    background-position: -80px -150px;
+}
+
+.nav_lvl2_grid>a:before {
+    background-position: -150px -150px;
+}
+
+.nav_blocks:hover.blocks_logo>a:before {
+    background-position: -220px -80px;
+}
+
+
+.nav_lvl2_float:hover.nav_lvl2_float>a:before {
+    background-position: -150px -150px;
+}
+
+.nav_lvl2_grid:hover.nav_lvl2_grid>a:before {
+    background-position: -80px -150px;
+}
+
 /*===================================================
 =============== NAV MENU BAR ========================
 ===================================================*/
+.mysoc {
+    font-size: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+}
+.mysoc>li {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.mysoc>li+li {
+    margin-left: 25px;
+}
+.mysoc li a {
+    background: url('../images/css_sprites.png') -150px -10px;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.mysoc li+li a {
+    background-position: -150px -80px;
+}
+
+.mysoc li+li+li a {
+    background-position: -10px -150px;
+}
