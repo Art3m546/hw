@@ -431,7 +431,7 @@ p+p{
     position: absolute;
     top: 5px;
     left: 5px;
-    background: url('../images/css_sprites.png');
+    background: url('images/css_sprites.png');
 }
 
 .blocks_logo>a:before, .nav_lvl2_float>a:before {
@@ -555,7 +555,7 @@ p+p{
     margin-left: 25px;
 }
 .mysoc li a {
-    background: url('../images/css_sprites.png') -150px -10px;
+    background: url('images/css_sprites.png') -150px -10px;
     display: block;
     width: 50px;
     height: 50px;
