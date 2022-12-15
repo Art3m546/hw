@@ -579,7 +579,7 @@ p+p{
     transform-origin: top;
 }
 
-.nav_lvl1.nav_blocks:hover .block_list {
+.nav_blocks:hover .block_list {
     transform: scaleY(1);
     
 }
