@@ -435,7 +435,8 @@ p+p{
 }
 
 .blocks_logo>a:before, .nav_lvl2_float>a:before {
-    left: calc(100% - 55px); 
+    left: auto;
+    right: 5px;
 }
 
 .nav a:hover {
@@ -455,7 +456,7 @@ p+p{
     visibility: visible;
 }
 
-.nav_lvl2_float:hover #nav_lvl3_float{
+.nav_lvl2.nav_blocks.nav_lvl2_float:hover #nav_lvl3_float{
     visibility: visible;
 }
 
@@ -568,3 +569,43 @@ p+p{
 .mysoc li+li+li a {
     background-position: -10px -150px;
 }
+
+/*===================================================
+=============== TRANSITIONS ========================
+===================================================*/
+.block_list {
+    transform: scaleY(0);
+    transition: transform .4s ease-in .15s;
+    transform-origin: top;
+}
+
+.nav_lvl1.nav_blocks:hover .block_list {
+    transform: scaleY(1);
+    
+}
+
+#nav_lvl3_float {
+    overflow: hidden;
+    right: 0;
+    transition: right .6s cubic-bezier(0.2, -2, 0.8, 2) .05s;
+}
+
+.nav_lvl2_float:hover #nav_lvl3_float {
+    left: 100%;
+    right: -100%;
+}
+
+#nav_lvl3_grid {
+    overflow: hidden;
+    left: 0;
+    transition: left .6s cubic-bezier(0.2, -2, 0.8, 2) .05s;
+}
+
+.nav_lvl2_grid:hover #nav_lvl3_grid {
+    left: -100%;
+    right: 100%;
+}
+
+/*===================================================
+=============== TRANSITIONS ========================
+===================================================*/
