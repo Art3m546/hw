@@ -579,9 +579,19 @@ p+p{
     transform-origin: top;
 }
 
+.block_list a {
+    background-color: aliceblue;
+    color: rgb(19, 67, 172);
+    transition: color, background-color .8s linear .25s;
+}
+
 .nav_blocks:hover .block_list {
     transform: scaleY(1);
-    
+}
+
+.nav_blocks:hover .block_list a {
+    background-color: rgb(19, 67, 172);
+    color: aliceblue;
 }
 
 #nav_lvl3_float {
