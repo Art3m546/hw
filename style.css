@@ -383,7 +383,6 @@ p+p{
 
 .on_pic span {
     background: linear-gradient(to right, rgb(20, 11, 11), rgb(255, 9, 9));
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
