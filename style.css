@@ -110,7 +110,7 @@ h3+p, p+p {
 }
 
 form, form>div {
-    padding: 5px 0;
+    padding: 5px;
 }
 
 #aboutPageInfo+p+p{
@@ -942,3 +942,78 @@ p+p{
     box-sizing: border-box;
     left: 356px;
 }
+
+
+/* FORM*/
+
+form {
+    max-width: 600px;
+    min-width: 600px;
+    max-height: 400px;
+    min-height: 400px;
+    background-color: rgb(211, 102, 102);
+    margin: 50px auto 100px;
+    vertical-align: top;
+}
+
+input {
+    width: 250px;
+    height: 56px;
+    color: red;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 36px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+    background-color: red;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;    
+    display: block;    
+    width: 25px;
+    cursor: pointer;
+    background: linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 0, 0) 100%) 11px 0px/5px 25px,
+                linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 0, 0) 100%) 0px 10px/25px 5px,
+                linear-gradient(rgb(255, 0, 0) 0%, rgb(255, 0, 0) 100%) 0px 35px/25px 5px,
+                rgb(214, 214, 214);
+    background-repeat: no-repeat;
+}
+
+select {
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+    color: red;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 36px;
+    appearance: none;
+    background: linear-gradient(72deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 13px) 14px/25px 25px,
+                linear-gradient(144deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 11px) 10px/25px 25px,
+                linear-gradient(216deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 8px) 10px/25px 25px,
+                linear-gradient(288deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 6px) 14px/25px 25px,
+                linear-gradient( rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 8px) 17px/28px 28px,
+                rgb(93, 218, 207);
+    background-repeat: no-repeat;
+}
+
+select:focus {
+background: linear-gradient(72deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 4px) 10px/25px 25px,
+            linear-gradient(144deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 8px) 14px/25px 25px,
+            linear-gradient(216deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 12px) 14px/25px 25px,
+            linear-gradient(288deg, rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 16px) 10px/25px 25px,
+            linear-gradient(rgba(255, 0, 0, 0) 40%, rgb(255, 0, 0) 40%, rgb(255, 0, 0) 55%, rgba(255, 0, 0, 0) 55%) calc(100% - 8px) 4px/28px 28px,
+            rgb(93, 218, 207);
+background-repeat: no-repeat;
+}
+
+
